@@ -1,0 +1,30 @@
+{
+    "name": "khwua/laravel-bbcode",
+    "description": "Parse your bbcode easy with this library.",
+    "keywords": [
+        "bbcode",
+        "parser",
+        "laravel"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "illuminate/support": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Khwua\\BBCode\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Khwua\\BBCode\\BBCodeServiceProvider"
+            ],
+            "aliases": {
+                "BBCode": "Khwua\\BBCode\\Facades\\BBCode"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
